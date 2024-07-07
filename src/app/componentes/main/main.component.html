@@ -1,0 +1,27 @@
+<div class="blog-container">
+  <div class="form-container">
+    <h2>Publicar nueva noticia</h2>
+    <div>
+      <label for="title">Título</label>
+      <input type="text" id="title" name="title" required [(ngModel)]="nuevoarticulo.titulo">
+    </div>
+    <div>
+      <label for="image">Imagen URL</label>
+      <input type="text" id="image" name="image" required [(ngModel)]="nuevoarticulo.imagen">
+    </div>
+    <div>
+      <label for="body">Cuerpo de la noticia</label>
+      <textarea id="body" name="body" required [(ngModel)]="nuevoarticulo.texto"></textarea>
+    </div>
+    <div>
+      <label for="date">Fecha de publicación</label>
+      <input type="date" id="date" name="date" required [(ngModel)]="nuevoarticulo.fecha">
+    </div>
+    <button (click)="guardararticulo()">Publicar</button>
+  </div>
+
+  <div id="news-list-container" class="news-list-container">
+    <h2>Noticias</h2>
+  </div>
+</div>
+
